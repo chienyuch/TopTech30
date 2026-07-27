@@ -1,4 +1,4 @@
-import { NewsArticle, DailyInsight } from '../types';
+import type { NewsArticle, DailyInsight, TechCategory } from "../types";
 
 export const INITIAL_NEWS: NewsArticle[] = [
   // --- DAILY TOP 30 (每日熱門前30則) ---
