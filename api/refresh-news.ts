@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { asGeneratedNews, asPeriod, fallbackNews, geminiClient, getDynamicFormattedDate, methodNotAllowed, parseJsonArray } from "../lib/news";
+import { asGeneratedNews, asPeriod, fallbackNews, getDynamicFormattedDate, methodNotAllowed, parseJsonArray } from "../lib/news";
+import { geminiClient } from "../lib/gemini";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") return methodNotAllowed(res, "POST");

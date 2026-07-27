@@ -7,6 +7,9 @@ This edition replaces the old Express `server.ts` with four Vercel Functions. Th
 - `POST /api/ai-summarize`
 - `GET /api/tech-insights`
 
+The non-AI routes deliberately do not load the Gemini SDK. If a Gemini key
+or SDK problem occurs, `/api/news` and `/api/tech-insights` remain available.
+
 ## One-time Vercel configuration
 
 1. In Vercel, select **TopTech30** and open **Settings → Environments → Production → Environment Variables**.

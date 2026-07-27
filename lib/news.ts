@@ -1,4 +1,3 @@
-import { GoogleGenAI } from "@google/genai";
 import { INITIAL_NEWS, DAILY_INSIGHTS } from "../src/data/initialNews";
 import type { NewsArticle, NewsPeriod, TechSource } from "../src/types";
 
@@ -33,11 +32,6 @@ export function fallbackNews(period: NewsPeriod): NewsArticle[] {
       likes: article.likes + Math.floor(Math.random() * 85 + 15),
       hotScore: Math.min(99.9, Number((article.hotScore + (Math.random() * 0.2 - 0.1)).toFixed(1))),
     }));
-}
-
-export function geminiClient(): GoogleGenAI | null {
-  const apiKey = process.env.GEMINI_API_KEY;
-  return apiKey ? new GoogleGenAI({ apiKey }) : null;
 }
 
 export function asPeriod(value: unknown): NewsPeriod {

@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { geminiClient, methodNotAllowed } from "../lib/news";
+import { methodNotAllowed } from "../lib/news";
+import { geminiClient } from "../lib/gemini";
 
 const fallback = (summaryZh?: string) => ({
   executiveSummary: summaryZh || "此文章探討了最新科技突破對全球產業結構的重塑。",
