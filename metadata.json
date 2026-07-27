@@ -1,0 +1,6 @@
+{
+  "name": "美國五大科技新聞熱榜 Top30",
+  "description": "整合 TechCrunch、The Verge、Wired、Ars Technica、Engadget 美國5大科技媒體之每日、每週、每月 Top 30 熱門新聞與 AI 繁體中文摘要與趨勢分析。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
